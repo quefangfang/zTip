@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link type="text/css" rel="stylesheet" href="css/zTip.min.css" />
+</head>
+<body>
+<button id="successBtn">成功了点击我</button>
+<button id="failBtn">失败了点击我</button>
+<script src="js/zTip.min.js"></script>
+<script>
+    var successBtn = document.getElementById('successBtn'),
+        failBtn = document.getElementById('failBtn');
+    successBtn.addEventListener('click',function(){
+        zTip({msg:"成功提示"});
+    });
+    failBtn.addEventListener('click',function(){
+        zTip({msg:"失败提示",type:'fail'});
+    });
+
+</script>
+</body>
+</html>
